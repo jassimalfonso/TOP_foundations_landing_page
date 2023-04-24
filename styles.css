@@ -1,5 +1,86 @@
 body {
-	background-color: #1f2937;
-	color: #f9faf8;
+	margin: auto 0;
 	font-family: "Roboto", sans-serif;
+}
+
+/* NAV */
+.main_nav {
+	display: flex;
+	list-style: none;
+	background-color: #1f2937;
+	font-size: 18px;
+	padding: 0 10vh;
+	margin: 0;
+}
+
+li {
+	padding: 1.5vh 10px;
+}
+
+a {
+	text-decoration: none;
+	color: #e5e7eb;
+}
+
+/* Header Logo */
+#header_logo {
+	margin-right: auto;
+	padding-left: 0;
+}
+
+#header_logo a {
+	font-size: 24px;
+	font-weight: bold;
+	color: #f9faf8
+}
+
+@media only screen and (max-width: 800px) {
+    .main_nav {
+        font-size: 0.75em;
+    }
+
+	#header_logo a {
+		font-size: 1.4em;
+	}
+}
+
+/* Hero Main */
+#hero_main {
+	display: grid;
+	background-color: #1f2937;
+	color: #e5e7eb;
+	padding: 0 10vh;
+	margin: 0;
+	grid-template-columns: 1fr 1fr;
+	gap: 5vw;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+}
+
+.text_main h1 {
+	font-size: 48px;
+	font-weight: 900;
+	color: #f9faf8
+}
+
+.image_placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: grey;
+}
+
+.text_main h1, p { 
+	margin: 0;
+}
+
+.text_main button {
+	font-weight: bold;
+	background-color: #3882f6;
+	color: #e5e7eb;
+	padding: 0.35rem 1.75rem;
+	border: none;
+	border-radius: 0.35rem;
+	cursor: pointer;
+	margin: 10px 0
 }
