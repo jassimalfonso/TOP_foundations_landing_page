@@ -11,6 +11,7 @@ body {
 	font-size: 18px;
 	padding: 0 10vh;
 	margin: 0;
+	align-items: center;
 }
 
 li {
@@ -44,6 +45,16 @@ a {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+    .main_nav {
+        font-size: 0.55em;
+    }
+
+	#header_logo a {
+		font-size: 1.2em;
+	}
+}
+
 /* Hero Main */
 #hero_main {
 	display: grid;
@@ -55,6 +66,7 @@ a {
 	gap: 5vw;
 	padding-top: 10vh;
 	padding-bottom: 10vh;
+	font-size: 18px;
 }
 
 .text_main h1 {
@@ -79,8 +91,73 @@ a {
 	background-color: #3882f6;
 	color: #e5e7eb;
 	padding: 0.35rem 1.75rem;
-	border: none;
+	border: none;font-size: 18px;
 	border-radius: 0.35rem;
 	cursor: pointer;
 	margin: 10px 0
 }
+
+/* Info Cards */
+
+.info_cards_header {
+	display: flex;
+	justify-content: center;
+}
+
+.info_cards_header h1 {
+	font-size: 36px;
+	font-weight: 900;
+	color: #1f2937;
+	padding: 1%;
+}
+
+.info_cards_container {
+	display: flex;
+	/* grid-template-columns: 1fr 1fr 1fr 1fr; */
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+#info_cards {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* .info_cards_item {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly; */
+
+	/* display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+	gap: 20px;
+} */
+
+/* .info_cards_img {
+	background-color: #ffffff;
+	border: 3px solid #3882f6;
+	border-radius: 15px;
+	height: 200px;
+	width: 200px;
+} */
+
+.info_cards_img img {
+	height: 200px;
+	width: 200px;
+	object-fit: cover;
+	background-color: #ffffff;
+	border: 3px solid #3882f6;
+	border-radius: 15px;
+}
+
+.info_cards_text {
+	font-size: 18px;
+	color: #1f2937;
+	text-align: center;
+	width: 75%;
+	padding-top: 2%;
+}
+
