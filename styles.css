@@ -124,6 +124,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 7.0rem;
 }
 
 /* .info_cards_item {
@@ -161,3 +162,35 @@ a {
 	padding-top: 2%;
 }
 
+/* Quote Section */
+#quote_section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 7.0rem 8.5rem;
+	background-color: #e5e7eb;
+	
+}
+
+.quote_text {
+	color: #1f2937;
+	font-size: 36px;
+	font-style: italic;
+	font-weight: lighter;
+	text-align: justify;
+	padding-bottom: 0;
+
+}
+
+.quote_author {
+	align-self: flex-end;
+}
+
+.quote_author h6 {
+	color: #1f2937;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: justify;
+	margin: 0;
+}
