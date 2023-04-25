@@ -247,3 +247,16 @@ a {
 	border-radius: 7px;
 	font-weight: bolder;
 }
+
+/* Footer Section */
+#footer_section {
+	display: flex;
+	justify-content: center;
+	background-color: #1f2937;
+	padding: 2rem;
+}
+
+#footer_section footer {
+	color: #e5e7eb;
+	font-size: 12px;
+}
